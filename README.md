@@ -6,6 +6,7 @@
 [![Capstones](https://img.shields.io/badge/capstones-3%2F3-brightgreen.svg)](capstones)
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/wesamkiwan/python-for-data-science-and-AI/pulls)
+[![AI-Assisted](https://img.shields.io/badge/AI--assisted-Claude%20Sonnet%205-8A63D2.svg?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/wesamkiwan/python-for-data-science-and-AI)](https://github.com/wesamkiwan/python-for-data-science-and-AI/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/wesamkiwan/python-for-data-science-and-AI)](https://github.com/wesamkiwan/python-for-data-science-and-AI)
