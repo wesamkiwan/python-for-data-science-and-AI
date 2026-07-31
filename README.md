@@ -1,29 +1,10 @@
 # Python for Data Science & AI — Zero to Hero
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Course Status](https://img.shields.io/badge/status-complete-brightgreen.svg)](PROGRESS.md)
-[![Modules](https://img.shields.io/badge/modules-20%2F20-brightgreen.svg)](PROGRESS.md)
-[![Capstones](https://img.shields.io/badge/capstones-3%2F3-brightgreen.svg)](capstones)
-[![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/wesamkiwan/python-for-data-science-and-AI/pulls)
-[![AI-Assisted](https://img.shields.io/badge/AI--assisted-Claude%20Sonnet%205-8A63D2.svg?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Course Status](https://img.shields.io/badge/status-complete-brightgreen.svg)](PROGRESS.md) [![Modules](https://img.shields.io/badge/modules-20%2F20-brightgreen.svg)](PROGRESS.md) [![Capstones](https://img.shields.io/badge/capstones-3%2F3-brightgreen.svg)](capstones) [![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/wesamkiwan/python-for-data-science-and-AI/pulls) [![AI-Assisted](<https://img.shields.io/badge/AI--assisted-Claude%20Sonnet%205-8A63D2.svg?logo=anthropic&logoColor=white>)](https://claude.com/claude-code)
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/wesamkiwan/python-for-data-science-and-AI)](https://github.com/wesamkiwan/python-for-data-science-and-AI/commits/main)
-[![GitHub repo size](https://img.shields.io/github/repo-size/wesamkiwan/python-for-data-science-and-AI)](https://github.com/wesamkiwan/python-for-data-science-and-AI)
-[![GitHub stars](https://img.shields.io/github/stars/wesamkiwan/python-for-data-science-and-AI?style=social)](https://github.com/wesamkiwan/python-for-data-science-and-AI/stargazers)
+[![GitHub last commit](https://img.shields.io/github/last-commit/wesamkiwan/python-for-data-science-and-AI)](https://github.com/wesamkiwan/python-for-data-science-and-AI/commits/main) [![GitHub repo size](https://img.shields.io/github/repo-size/wesamkiwan/python-for-data-science-and-AI)](https://github.com/wesamkiwan/python-for-data-science-and-AI) [![GitHub stars](https://img.shields.io/github/stars/wesamkiwan/python-for-data-science-and-AI?style=social)](https://github.com/wesamkiwan/python-for-data-science-and-AI/stargazers)
 
-![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?logo=python&logoColor=white)
-![scikit--learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-1C1C1C)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Transformers-FFD21E)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C)
-![SQL](https://img.shields.io/badge/SQL-4479A1?logo=sqlite&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?logo=python&logoColor=white) ![scikit--learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white) ![XGBoost](https://img.shields.io/badge/XGBoost-1C1C1C) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white) ![Hugging Face](<https://img.shields.io/badge/%F0%9F%A4%97%20Transformers-FFD21E>) ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C) ![SQL](https://img.shields.io/badge/SQL-4479A1?logo=sqlite&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
 
 A complete, production-ready learning path that takes you from **absolute beginner** to **job-ready Data Scientist / AI practitioner**, using modern, industry-standard tools.
 
@@ -50,32 +31,33 @@ Everything you need to install is covered in the **Environment Setup** section b
 
 ## 🗺️ Course Roadmap
 
-| Phase | Module | Difficulty | Est. Time |
-|-------|--------|:----------:|:---------:|
-| 1 — Python Foundations | 01. Python Fundamentals | 🟢 | 4h |
-| 1 | 02. Functions, Modules & Error Handling | 🟢 | 3h |
-| 1 | 03. Object-Oriented Programming (OOP) | 🟢 | 3h |
-| 1 | 04. File I/O, JSON/CSV & Working with APIs | 🟢 | 2h |
-| 1 | 05. Python Tooling & Environments (venv, pip, git) | 🟢 | 2h |
-| 2 — Data Science Core | 06. NumPy Fundamentals | 🟡 | 3h |
-| 2 | 07. Pandas for Data Manipulation | 🟡 | 5h |
-| 2 | 08. Data Cleaning & Wrangling | 🟡 | 4h |
-| 2 | 09. Data Visualization (Matplotlib, Seaborn, Plotly) | 🟡 | 4h |
-| 2 | 10. Exploratory Data Analysis & Statistics | 🟡 | 4h |
-| 2 | 11. SQL for Data Scientists | 🟡 | 3h |
-| 3 — Machine Learning | 12. ML Foundations (scikit-learn) | 🟡 | 5h |
-| 3 | 13. Feature Engineering & Model Evaluation | 🟡 | 4h |
-| 3 | 14. Unsupervised Learning & Clustering | 🟡 | 3h |
-| 3 | 15. Ensemble Methods & Advanced ML (XGBoost/LightGBM) | 🔴 | 4h |
-| 4 — Deep Learning & AI | 16. Deep Learning Foundations (PyTorch + TensorFlow/Keras) | 🔴 | 6h |
-| 4 | 17. Computer Vision (CNNs) | 🔴 | 4h |
-| 4 | 18. NLP & Transformers | 🔴 | 5h |
-| 4 | 19. Generative AI & LLMs (prompting, embeddings, RAG) | 🔴 | 5h |
-| 5 — Deployment | 20. MLOps & Deployment (Docker, FastAPI, monitoring) | 🔴 | 5h |
+| Phase                   | Module                                                     | Difficulty | Est. Time |
+| ----------------------- | ---------------------------------------------------------- | :--------: | :-------: |
+| 1 — Python Foundations | 01. Python Fundamentals                                    |     🟢     |    4h    |
+| 1                       | 02. Functions, Modules & Error Handling                    |     🟢     |    3h    |
+| 1                       | 03. Object-Oriented Programming (OOP)                      |     🟢     |    3h    |
+| 1                       | 04. File I/O, JSON/CSV & Working with APIs                 |     🟢     |    2h    |
+| 1                       | 05. Python Tooling & Environments (venv, pip, git)         |     🟢     |    2h    |
+| 2 — Data Science Core  | 06. NumPy Fundamentals                                     |     🟡     |    3h    |
+| 2                       | 07. Pandas for Data Manipulation                           |     🟡     |    5h    |
+| 2                       | 08. Data Cleaning & Wrangling                              |     🟡     |    4h    |
+| 2                       | 09. Data Visualization (Matplotlib, Seaborn, Plotly)       |     🟡     |    4h    |
+| 2                       | 10. Exploratory Data Analysis & Statistics                 |     🟡     |    4h    |
+| 2                       | 11. SQL for Data Scientists                                |     🟡     |    3h    |
+| 3 — Machine Learning   | 12. ML Foundations (scikit-learn)                          |     🟡     |    5h    |
+| 3                       | 13. Feature Engineering & Model Evaluation                 |     🟡     |    4h    |
+| 3                       | 14. Unsupervised Learning & Clustering                     |     🟡     |    3h    |
+| 3                       | 15. Ensemble Methods & Advanced ML (XGBoost/LightGBM)      |     🔴     |    4h    |
+| 4 — Deep Learning & AI | 16. Deep Learning Foundations (PyTorch + TensorFlow/Keras) |     🔴     |    6h    |
+| 4                       | 17. Computer Vision (CNNs)                                 |     🔴     |    4h    |
+| 4                       | 18. NLP & Transformers                                     |     🔴     |    5h    |
+| 4                       | 19. Generative AI & LLMs (prompting, embeddings, RAG)      |     🔴     |    5h    |
+| 5 — Deployment         | 20. MLOps & Deployment (Docker, FastAPI, monitoring)       |     🔴     |    5h    |
 
 **Total estimated time: ~78 hours**
 
 ### 🏆 Capstone Projects
+
 - [ ] Capstone 1: End-to-end EDA + ML project on a real dataset 🟡
 - [ ] Capstone 2: Deep learning image classifier (CNN) 🔴
 - [ ] Capstone 3: LLM-powered RAG application 🔴
@@ -141,4 +123,5 @@ python-for-data-science-and-ai/
 5. Use the **master cheat sheet** as your on-the-job quick reference once you're working.
 
 ---
+
 👉 **Start here:** [`phase1-python-foundations/module01-python-fundamentals/01-getting-started.md`](phase1-python-foundations/module01-python-fundamentals/01-getting-started.md)
