@@ -5,7 +5,7 @@ This file tracks two separate things — don't confuse them:
 1. **Content Status** (right-most column) — whether the material for a module has been *written* yet. This is informational only; you don't edit it.
 2. **Your checkboxes** (Learning / Exercise / Cheat Sheet / Interview / References) — these are **for you, the learner**, to check off yourself as you actually work through each piece. They start empty and stay empty until you do the work — nobody pre-fills these for you.
 
-**Content Available:** 4/20 modules written (20%)
+**Content Available:** 5/20 modules written (25%)
 **Your Progress:** 0/20 modules complete (0%) — check boxes below as you go!
 
 | # | Module | Difficulty | Est. Time | Learning | Exercise | Cheat Sheet | Interview | References | Content Status |
@@ -14,7 +14,7 @@ This file tracks two separate things — don't confuse them:
 | 02 | Functions, Modules & Error Handling | 🟢 | 3h | [ ] | [ ] | [ ] | [ ] | [ ] | 📗 Content ready |
 | 03 | Object-Oriented Programming (OOP) | 🟢 | 3h | [ ] | [ ] | [ ] | [ ] | [ ] | 📗 Content ready |
 | 04 | File I/O, JSON/CSV & APIs | 🟢 | 2h | [ ] | [ ] | [ ] | [ ] | [ ] | 📗 Content ready |
-| 05 | Python Tooling & Environments | 🟢 | 2h | [ ] | [ ] | [ ] | [ ] | [ ] | ⏳ Not written yet |
+| 05 | Python Tooling & Environments | 🟢 | 2h | [ ] | [ ] | [ ] | [ ] | [ ] | 📗 Content ready |
 | 06 | NumPy Fundamentals | 🟡 | 3h | [ ] | [ ] | [ ] | [ ] | [ ] | ⏳ Not written yet |
 | 07 | Pandas for Data Manipulation | 🟡 | 5h | [ ] | [ ] | [ ] | [ ] | [ ] | ⏳ Not written yet |
 | 08 | Data Cleaning & Wrangling | 🟡 | 4h | [ ] | [ ] | [ ] | [ ] | [ ] | ⏳ Not written yet |
@@ -45,7 +45,7 @@ This file tracks two separate things — don't confuse them:
 
 ## 🛠️ Course-Author Log (for resuming content creation — not a learner section)
 
-👉 **Content written through:** Module 04 — File I/O, JSON/CSV & Working with APIs (Phase 1: Python Foundations)
-👉 **Next to write:** Module 05 — Python Tooling & Environments
+👉 **Content written through:** Module 05 — Python Tooling & Environments (Phase 1: Python Foundations) — 🎉 **Phase 1 complete!**
+👉 **Next to write:** Module 06 — NumPy Fundamentals (start of Phase 2: Data Science Core)
 
-**Resume instructions for next authoring session:** Module 04 is fully written (3 learning files — `01-reading-and-writing-files.md`, `02-json-and-csv.md`, `03-working-with-apis.md` — + cheatsheet + interview + references, all committed and pushed to GitHub; every code example was executed and verified to produce the documented output, including live calls against the public JSONPlaceholder test API). Write Module 05 next in `phase1-python-foundations/module05-tooling-environments/`: cover virtual environments (`venv`, why isolation matters), `pip` (install/uninstall/freeze, `requirements.txt`), a practical intro to git & GitHub (init, add, commit, push, pull, branches, `.gitignore` — this course's own repo is a live example learners can reference), and a brief intro to code editors/IDEs (VS Code setup, the Python extension, running/debugging a script). This module closes out Phase 1 — after it, Capstone 1 unlocks conceptually (though it's built after Module 15 per the roadmap) and Phase 2 (Data Science Core, starting with Module 06 — NumPy) begins. Build learning file(s) → cheatsheet → interview prep → references → update this module's row to "📗 Content ready" (leave the learner checkboxes empty!) → commit + push → move the two pointers above to Module 06.
+**Resume instructions for next authoring session:** Module 05 is fully written (3 learning files — `01-virtual-environments-and-pip.md`, `02-git-and-github.md`, `03-code-editors-and-vscode.md` — + cheatsheet + interview + references, all committed and pushed to GitHub; every code/CLI example was executed and verified, including a real `venv` create/activate/pip-install/freeze cycle and a real git init/commit/branch/merge cycle in a scratch folder — note: `git init` defaults to branch `master` locally unless configured otherwise, so the git lesson explicitly calls this out and the exercise uses `git branch -M main` to normalize it). This closes out Phase 1 entirely (Modules 01-05 all written). Write Module 06 next in `phase2-data-science-core/module06-numpy/` (note: existing folder is named `module06-numpy`, not `module06-numpy-fundamentals`): cover NumPy array creation (`np.array`, `np.zeros`/`ones`/`arange`/`linspace`), array shape/dtype/indexing/slicing, vectorized operations & broadcasting, boolean/fancy indexing, aggregation functions (`sum`/`mean`/`std`/`min`/`max` with `axis`), and reshaping (`reshape`/`flatten`/`transpose`) — frame everything around *why* vectorized NumPy operations are dramatically faster than looping in plain Python (a real timing comparison example would land this well), since that performance argument is the foundation for why Pandas/ML libraries are all built on NumPy underneath. `pip install numpy` in a venv to verify every example runs and produces the documented output before finalizing. Build learning file(s) → cheatsheet → interview prep → references → update this module's row to "📗 Content ready" (leave the learner checkboxes empty!) → commit + push → move the two pointers above to Module 07.
