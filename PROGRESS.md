@@ -5,7 +5,7 @@ This file tracks two separate things — don't confuse them:
 1. **Content Status** (right-most column) — whether the material for a module has been *written* yet. This is informational only; you don't edit it.
 2. **Your checkboxes** (Learning / Exercise / Cheat Sheet / Interview / References) — these are **for you, the learner**, to check off yourself as you actually work through each piece. They start empty and stay empty until you do the work — nobody pre-fills these for you.
 
-**Content Available:** 12/20 modules written (60%)
+**Content Available:** 13/20 modules written (65%)
 **Your Progress:** 0/20 modules complete (0%) — check boxes below as you go!
 
 | # | Module | Difficulty | Est. Time | Learning | Exercise | Cheat Sheet | Interview | References | Content Status |
@@ -22,7 +22,7 @@ This file tracks two separate things — don't confuse them:
 | 10 | EDA & Statistics | 🟡 | 4h | [ ] | [ ] | [ ] | [ ] | [ ] | 📗 Content ready |
 | 11 | SQL for Data Scientists | 🟡 | 3h | [ ] | [ ] | [ ] | [ ] | [ ] | 📗 Content ready |
 | 12 | ML Foundations (scikit-learn) | 🟡 | 5h | [ ] | [ ] | [ ] | [ ] | [ ] | 📗 Content ready |
-| 13 | Feature Engineering & Model Evaluation | 🟡 | 4h | [ ] | [ ] | [ ] | [ ] | [ ] | ⏳ Not written yet |
+| 13 | Feature Engineering & Model Evaluation | 🟡 | 4h | [ ] | [ ] | [ ] | [ ] | [ ] | 📗 Content ready |
 | 14 | Unsupervised Learning & Clustering | 🟡 | 3h | [ ] | [ ] | [ ] | [ ] | [ ] | ⏳ Not written yet |
 | 15 | Ensemble Methods & Advanced ML | 🔴 | 4h | [ ] | [ ] | [ ] | [ ] | [ ] | ⏳ Not written yet |
 | 16 | Deep Learning Foundations (PyTorch + TF/Keras) | 🔴 | 6h | [ ] | [ ] | [ ] | [ ] | [ ] | ⏳ Not written yet |
@@ -45,7 +45,7 @@ This file tracks two separate things — don't confuse them:
 
 ## 🛠️ Course-Author Log (for resuming content creation — not a learner section)
 
-👉 **Content written through:** Module 12 — ML Foundations (scikit-learn) (Phase 3: Machine Learning)
-👉 **Next to write:** Module 13 — Feature Engineering & Model Evaluation
+👉 **Content written through:** Module 13 — Feature Engineering & Model Evaluation (Phase 3: Machine Learning)
+👉 **Next to write:** Module 14 — Unsupervised Learning & Clustering
 
-**Resume instructions for next authoring session:** Module 12 is fully written (3 learning files — `01-supervised-learning-basics.md`, `02-classification-with-sklearn.md`, `03-regression-with-sklearn.md` — + cheatsheet + interview + references, all committed and pushed to GitHub; every example executed against scikit-learn 1.9.0 and verified, including catching a real `ConvergenceWarning` on the Wine dataset's `LogisticRegression` exercise and correcting the lesson text — raising `max_iter` alone does NOT fix it, feature scaling does, and the lesson now says so honestly rather than claiming a fix that doesn't actually work). `fetch_california_housing()` downloads on first use (then caches) — unlike `load_iris`/`load_wine` which are bundled; this was noted in the lesson. `scikit-learn` is now installed (1.9.0). Write Module 13 next in `phase3-machine-learning/module13-feature-engineering-evaluation/` (folder confirmed empty): cover feature scaling (`StandardScaler`/`MinMaxScaler` — directly resolves the Module 12b convergence warning, close that loop explicitly), encoding categorical variables (`OneHotEncoder`, `pd.get_dummies` from Module 07), handling the train/test-split-before-preprocessing rule properly via `Pipeline`/`ColumnTransformer` (to avoid data leakage, flagged as a risk back in Module 12a), cross-validation (`cross_val_score`, k-fold), and overfitting/underfitting/bias-variance tradeoff (tie back to Module 12's train-vs-test R² gap scenario). This is a meaty module (4h estimate) — likely 3 learning files. Build learning file(s) → cheatsheet → interview prep → references → update this module's row to "📗 Content ready" (leave the learner checkboxes empty!) → commit + push → move the two pointers above to Module 14.
+**Resume instructions for next authoring session:** Module 13 is fully written (3 learning files — `01-scaling-and-encoding.md`, `02-pipelines-and-data-leakage.md`, `03-cross-validation-and-overfitting.md` — + cheatsheet + interview + references, all committed and pushed to GitHub; every example executed against scikit-learn 1.9.0 and verified, including confirming that wrapping Module 12b's unscaled Wine `LogisticRegression` in a `Pipeline` with `StandardScaler` both eliminates the `ConvergenceWarning` AND improves accuracy from 0.9556 to a perfect 1.0000 — closing that loop concretely; also verified a synthetic `make_classification` dataset that cleanly demonstrates overfitting (test accuracy peaks at low tree depth then degrades as depth increases, unlike the too-easy Wine/Iris datasets). Write Module 14 next in `phase3-machine-learning/module14-unsupervised-learning/` (folder confirmed empty): cover unsupervised learning's core distinction from Phase 3 so far (no target/labels — tie back explicitly to Module 12a's features/target framing), K-Means clustering (`sklearn.cluster.KMeans`, the elbow method for choosing k, visualizing clusters with Module 09's Matplotlib/Seaborn skills), hierarchical clustering (dendrograms) at a lighter/conceptual level, PCA for dimensionality reduction (`sklearn.decomposition.PCA`, tie back to Module 06's reshaping/Module 10's variance concepts), and a brief note on clustering evaluation (silhouette score) since there's no accuracy/R² without ground-truth labels. Given the 3h estimate, likely 2-3 learning files. Build learning file(s) → cheatsheet → interview prep → references → update this module's row to "📗 Content ready" (leave the learner checkboxes empty!) → commit + push → move the two pointers above to Module 15.
