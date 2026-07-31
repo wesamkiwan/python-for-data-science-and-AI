@@ -5,7 +5,7 @@ This file tracks two separate things — don't confuse them:
 1. **Content Status** (right-most column) — whether the material for a module has been *written* yet. This is informational only; you don't edit it.
 2. **Your checkboxes** (Learning / Exercise / Cheat Sheet / Interview / References) — these are **for you, the learner**, to check off yourself as you actually work through each piece. They start empty and stay empty until you do the work — nobody pre-fills these for you.
 
-**Content Available:** 5/20 modules written (25%)
+**Content Available:** 6/20 modules written (30%)
 **Your Progress:** 0/20 modules complete (0%) — check boxes below as you go!
 
 | # | Module | Difficulty | Est. Time | Learning | Exercise | Cheat Sheet | Interview | References | Content Status |
@@ -15,7 +15,7 @@ This file tracks two separate things — don't confuse them:
 | 03 | Object-Oriented Programming (OOP) | 🟢 | 3h | [ ] | [ ] | [ ] | [ ] | [ ] | 📗 Content ready |
 | 04 | File I/O, JSON/CSV & APIs | 🟢 | 2h | [ ] | [ ] | [ ] | [ ] | [ ] | 📗 Content ready |
 | 05 | Python Tooling & Environments | 🟢 | 2h | [ ] | [ ] | [ ] | [ ] | [ ] | 📗 Content ready |
-| 06 | NumPy Fundamentals | 🟡 | 3h | [ ] | [ ] | [ ] | [ ] | [ ] | ⏳ Not written yet |
+| 06 | NumPy Fundamentals | 🟡 | 3h | [ ] | [ ] | [ ] | [ ] | [ ] | 📗 Content ready |
 | 07 | Pandas for Data Manipulation | 🟡 | 5h | [ ] | [ ] | [ ] | [ ] | [ ] | ⏳ Not written yet |
 | 08 | Data Cleaning & Wrangling | 🟡 | 4h | [ ] | [ ] | [ ] | [ ] | [ ] | ⏳ Not written yet |
 | 09 | Data Visualization | 🟡 | 4h | [ ] | [ ] | [ ] | [ ] | [ ] | ⏳ Not written yet |
@@ -45,7 +45,7 @@ This file tracks two separate things — don't confuse them:
 
 ## 🛠️ Course-Author Log (for resuming content creation — not a learner section)
 
-👉 **Content written through:** Module 05 — Python Tooling & Environments (Phase 1: Python Foundations) — 🎉 **Phase 1 complete!**
-👉 **Next to write:** Module 06 — NumPy Fundamentals (start of Phase 2: Data Science Core)
+👉 **Content written through:** Module 06 — NumPy Fundamentals (Phase 2: Data Science Core)
+👉 **Next to write:** Module 07 — Pandas for Data Manipulation
 
-**Resume instructions for next authoring session:** Module 05 is fully written (3 learning files — `01-virtual-environments-and-pip.md`, `02-git-and-github.md`, `03-code-editors-and-vscode.md` — + cheatsheet + interview + references, all committed and pushed to GitHub; every code/CLI example was executed and verified, including a real `venv` create/activate/pip-install/freeze cycle and a real git init/commit/branch/merge cycle in a scratch folder — note: `git init` defaults to branch `master` locally unless configured otherwise, so the git lesson explicitly calls this out and the exercise uses `git branch -M main` to normalize it). This closes out Phase 1 entirely (Modules 01-05 all written). Write Module 06 next in `phase2-data-science-core/module06-numpy/` (note: existing folder is named `module06-numpy`, not `module06-numpy-fundamentals`): cover NumPy array creation (`np.array`, `np.zeros`/`ones`/`arange`/`linspace`), array shape/dtype/indexing/slicing, vectorized operations & broadcasting, boolean/fancy indexing, aggregation functions (`sum`/`mean`/`std`/`min`/`max` with `axis`), and reshaping (`reshape`/`flatten`/`transpose`) — frame everything around *why* vectorized NumPy operations are dramatically faster than looping in plain Python (a real timing comparison example would land this well), since that performance argument is the foundation for why Pandas/ML libraries are all built on NumPy underneath. `pip install numpy` in a venv to verify every example runs and produces the documented output before finalizing. Build learning file(s) → cheatsheet → interview prep → references → update this module's row to "📗 Content ready" (leave the learner checkboxes empty!) → commit + push → move the two pointers above to Module 07.
+**Resume instructions for next authoring session:** Module 06 is fully written (3 learning files — `01-arrays-and-indexing.md`, `02-vectorization-and-broadcasting.md`, `03-aggregation-and-reshaping.md` — + cheatsheet + interview + references, all committed and pushed to GitHub; every code example was executed and verified, including a real Python-loop-vs-NumPy timing comparison — note the doc deliberately reports honest, machine-observed speedup numbers (~6-7x on the authoring machine, running Python 3.14) rather than an inflated round number, with a caveat that older Python versions/larger arrays typically show bigger gaps; don't "correct" this back to an unverified number). Write Module 07 next in `phase2-data-science-core/module07-pandas/` (pandas 3.0.x is installed and importable in this environment): cover creating Series/DataFrames, reading data (`pd.read_csv`, `pd.read_json`), inspecting data (`.head()`, `.info()`, `.describe()`, `.shape`, `.dtypes`), selecting/filtering with `.loc`/`.iloc` and boolean masks, adding/modifying/dropping columns, `.sort_values()`, `.groupby()` (tie this explicitly back to Module 06's `axis`/aggregation intuition), and merging/joining DataFrames (`pd.merge`, `pd.concat`). This is a big module (5h estimate, matching Module 01/07's largest scope) — likely wants 3-4 learning files given the breadth (e.g., DataFrame basics & reading data / selection & filtering / column ops & sorting / groupby & merging). Build learning file(s) → cheatsheet → interview prep → references → update this module's row to "📗 Content ready" (leave the learner checkboxes empty!) → commit + push → move the two pointers above to Module 08.
