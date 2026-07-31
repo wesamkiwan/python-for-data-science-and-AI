@@ -1,5 +1,29 @@
 # Python for Data Science & AI — Zero to Hero
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Course Status](https://img.shields.io/badge/status-complete-brightgreen.svg)](PROGRESS.md)
+[![Modules](https://img.shields.io/badge/modules-20%2F20-brightgreen.svg)](PROGRESS.md)
+[![Capstones](https://img.shields.io/badge/capstones-3%2F3-brightgreen.svg)](capstones)
+[![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/wesamkiwan/python-for-data-science-and-AI/pulls)
+
+[![GitHub last commit](https://img.shields.io/github/last-commit/wesamkiwan/python-for-data-science-and-AI)](https://github.com/wesamkiwan/python-for-data-science-and-AI/commits/main)
+[![GitHub repo size](https://img.shields.io/github/repo-size/wesamkiwan/python-for-data-science-and-AI)](https://github.com/wesamkiwan/python-for-data-science-and-AI)
+[![GitHub stars](https://img.shields.io/github/stars/wesamkiwan/python-for-data-science-and-AI?style=social)](https://github.com/wesamkiwan/python-for-data-science-and-AI/stargazers)
+
+![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?logo=python&logoColor=white)
+![scikit--learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-1C1C1C)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Transformers-FFD21E)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C)
+![SQL](https://img.shields.io/badge/SQL-4479A1?logo=sqlite&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+
 A complete, production-ready learning path that takes you from **absolute beginner** to **job-ready Data Scientist / AI practitioner**, using modern, industry-standard tools.
 
 ## 🎯 What You'll Be Able to Do
