@@ -5,7 +5,7 @@ This file tracks two separate things — don't confuse them:
 1. **Content Status** (right-most column) — whether the material for a module has been *written* yet. This is informational only; you don't edit it.
 2. **Your checkboxes** (Learning / Exercise / Cheat Sheet / Interview / References) — these are **for you, the learner**, to check off yourself as you actually work through each piece. They start empty and stay empty until you do the work — nobody pre-fills these for you.
 
-**Content Available:** 6/20 modules written (30%)
+**Content Available:** 7/20 modules written (35%)
 **Your Progress:** 0/20 modules complete (0%) — check boxes below as you go!
 
 | # | Module | Difficulty | Est. Time | Learning | Exercise | Cheat Sheet | Interview | References | Content Status |
@@ -16,7 +16,7 @@ This file tracks two separate things — don't confuse them:
 | 04 | File I/O, JSON/CSV & APIs | 🟢 | 2h | [ ] | [ ] | [ ] | [ ] | [ ] | 📗 Content ready |
 | 05 | Python Tooling & Environments | 🟢 | 2h | [ ] | [ ] | [ ] | [ ] | [ ] | 📗 Content ready |
 | 06 | NumPy Fundamentals | 🟡 | 3h | [ ] | [ ] | [ ] | [ ] | [ ] | 📗 Content ready |
-| 07 | Pandas for Data Manipulation | 🟡 | 5h | [ ] | [ ] | [ ] | [ ] | [ ] | ⏳ Not written yet |
+| 07 | Pandas for Data Manipulation | 🟡 | 5h | [ ] | [ ] | [ ] | [ ] | [ ] | 📗 Content ready |
 | 08 | Data Cleaning & Wrangling | 🟡 | 4h | [ ] | [ ] | [ ] | [ ] | [ ] | ⏳ Not written yet |
 | 09 | Data Visualization | 🟡 | 4h | [ ] | [ ] | [ ] | [ ] | [ ] | ⏳ Not written yet |
 | 10 | EDA & Statistics | 🟡 | 4h | [ ] | [ ] | [ ] | [ ] | [ ] | ⏳ Not written yet |
@@ -45,7 +45,7 @@ This file tracks two separate things — don't confuse them:
 
 ## 🛠️ Course-Author Log (for resuming content creation — not a learner section)
 
-👉 **Content written through:** Module 06 — NumPy Fundamentals (Phase 2: Data Science Core)
-👉 **Next to write:** Module 07 — Pandas for Data Manipulation
+👉 **Content written through:** Module 07 — Pandas for Data Manipulation (Phase 2: Data Science Core)
+👉 **Next to write:** Module 08 — Data Cleaning & Wrangling
 
-**Resume instructions for next authoring session:** Module 06 is fully written (3 learning files — `01-arrays-and-indexing.md`, `02-vectorization-and-broadcasting.md`, `03-aggregation-and-reshaping.md` — + cheatsheet + interview + references, all committed and pushed to GitHub; every code example was executed and verified, including a real Python-loop-vs-NumPy timing comparison — note the doc deliberately reports honest, machine-observed speedup numbers (~6-7x on the authoring machine, running Python 3.14) rather than an inflated round number, with a caveat that older Python versions/larger arrays typically show bigger gaps; don't "correct" this back to an unverified number). Write Module 07 next in `phase2-data-science-core/module07-pandas/` (pandas 3.0.x is installed and importable in this environment): cover creating Series/DataFrames, reading data (`pd.read_csv`, `pd.read_json`), inspecting data (`.head()`, `.info()`, `.describe()`, `.shape`, `.dtypes`), selecting/filtering with `.loc`/`.iloc` and boolean masks, adding/modifying/dropping columns, `.sort_values()`, `.groupby()` (tie this explicitly back to Module 06's `axis`/aggregation intuition), and merging/joining DataFrames (`pd.merge`, `pd.concat`). This is a big module (5h estimate, matching Module 01/07's largest scope) — likely wants 3-4 learning files given the breadth (e.g., DataFrame basics & reading data / selection & filtering / column ops & sorting / groupby & merging). Build learning file(s) → cheatsheet → interview prep → references → update this module's row to "📗 Content ready" (leave the learner checkboxes empty!) → commit + push → move the two pointers above to Module 08.
+**Resume instructions for next authoring session:** Module 07 is fully written (4 learning files — `01-series-and-dataframes.md`, `02-selection-and-filtering.md`, `03-column-operations-and-sorting.md`, `04-groupby-and-merging.md` — + cheatsheet + interview + references, all committed and pushed to GitHub; every code example was executed against pandas 3.0.x and verified, including a note that pandas 3.0+ shows a dedicated `str` dtype for text columns instead of the `object` dtype older tutorials reference — flagged explicitly in the lesson so learners aren't confused by the mismatch with older material they find online). Write Module 08 next in `phase2-data-science-core/module08-data-cleaning/` (folder confirmed empty, ready to use): cover detecting/handling missing data (`.isna()`, `.dropna()`, `.fillna()`), detecting/removing duplicates (`.duplicated()`, `.drop_duplicates()`), fixing data types (`.astype()`, `pd.to_numeric(errors="coerce")`, `pd.to_datetime()`), string cleaning (`.str` accessor methods — `.strip()`, `.lower()`, `.replace()`), and detecting/handling outliers (IQR method, z-score). Frame this module around the reality that real-world data is messy by default — tie back to Module 04's `errors="coerce"` mention and Module 02's error-handling instincts. Build learning file(s) → cheatsheet → interview prep → references → update this module's row to "📗 Content ready" (leave the learner checkboxes empty!) → commit + push → move the two pointers above to Module 09.
