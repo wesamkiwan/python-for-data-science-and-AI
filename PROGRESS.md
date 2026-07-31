@@ -5,13 +5,13 @@ This file tracks two separate things — don't confuse them:
 1. **Content Status** (right-most column) — whether the material for a module has been *written* yet. This is informational only; you don't edit it.
 2. **Your checkboxes** (Learning / Exercise / Cheat Sheet / Interview / References) — these are **for you, the learner**, to check off yourself as you actually work through each piece. They start empty and stay empty until you do the work — nobody pre-fills these for you.
 
-**Content Available:** 1/20 modules written (5%)
+**Content Available:** 2/20 modules written (10%)
 **Your Progress:** 0/20 modules complete (0%) — check boxes below as you go!
 
 | # | Module | Difficulty | Est. Time | Learning | Exercise | Cheat Sheet | Interview | References | Content Status |
 |---|--------|:----------:|:---------:|:--------:|:--------:|:-----------:|:---------:|:----------:|--------|
 | 01 | Python Fundamentals | 🟢 | 4h | [ ] | [ ] | [ ] | [ ] | [ ] | 📗 Content ready |
-| 02 | Functions, Modules & Error Handling | 🟢 | 3h | [ ] | [ ] | [ ] | [ ] | [ ] | ⏳ Not written yet |
+| 02 | Functions, Modules & Error Handling | 🟢 | 3h | [ ] | [ ] | [ ] | [ ] | [ ] | 📗 Content ready |
 | 03 | Object-Oriented Programming (OOP) | 🟢 | 3h | [ ] | [ ] | [ ] | [ ] | [ ] | ⏳ Not written yet |
 | 04 | File I/O, JSON/CSV & APIs | 🟢 | 2h | [ ] | [ ] | [ ] | [ ] | [ ] | ⏳ Not written yet |
 | 05 | Python Tooling & Environments | 🟢 | 2h | [ ] | [ ] | [ ] | [ ] | [ ] | ⏳ Not written yet |
@@ -45,7 +45,7 @@ This file tracks two separate things — don't confuse them:
 
 ## 🛠️ Course-Author Log (for resuming content creation — not a learner section)
 
-👉 **Content written through:** Module 01 — Python Fundamentals (Phase 1: Python Foundations)
-👉 **Next to write:** Module 02 — Functions, Modules & Error Handling
+👉 **Content written through:** Module 02 — Functions, Modules & Error Handling (Phase 1: Python Foundations)
+👉 **Next to write:** Module 03 — Object-Oriented Programming (OOP)
 
-**Resume instructions for next authoring session:** Module 01 is fully written (3 learning files + cheatsheet + interview + references, all committed and pushed to GitHub). Write Module 02 next in `phase1-python-foundations/module02-functions-modules-errors/`: cover defining functions, parameters/arguments/return values, default & keyword args, `*args`/`**kwargs`, scope, docstrings, importing modules/packages, and `try`/`except`/`finally` error handling. Build learning file(s) → cheatsheet → interview prep → references → update this module's row to "📗 Content ready" (leave the learner checkboxes empty!) → commit + push → move the two pointers above to Module 03.
+**Resume instructions for next authoring session:** Module 02 is fully written (3 learning files — `01-functions.md`, `02-modules-and-packages.md`, `03-error-handling.md` — + cheatsheet + interview + references, all committed and pushed to GitHub; every code example was executed and verified to produce the documented output). Write Module 03 next in `phase1-python-foundations/module03-oop/`: cover classes & objects, `__init__` and instance attributes, instance methods, class attributes vs. instance attributes, inheritance, method overriding, `super()`, dunder methods (`__str__`, `__repr__`, `__eq__`), and a brief intro to encapsulation conventions (`_protected`, `__private`). Build learning file(s) → cheatsheet → interview prep → references → update this module's row to "📗 Content ready" (leave the learner checkboxes empty!) → commit + push → move the two pointers above to Module 04.
