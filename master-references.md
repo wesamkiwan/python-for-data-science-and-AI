@@ -206,6 +206,7 @@ Always the ground truth when a tutorial's syntax seems out of date.
 ## 6. 📚 Books
 
 **Foundational (Phase 1)**
+- 🟢 **"Introduction to Computation and Programming Using Python" by John V. Guttag** — MIT's intro CS textbook; its OOP chapter uses classic explicit `get_x()`/`set_x()` getter and setter methods throughout, a useful scaffold alongside Module 03's `@property` coverage.
 - 🟢 **"Python Crash Course" by Eric Matthes** — the most-recommended true-beginner Python book; its chapters on functions, classes, and working with data map directly to Modules 01-04.
 - 🟡 **"Fluent Python" by Luciano Ramalho** — the definitive book for understanding *why* Python works the way it does (dunder methods, closures, `*args`/`**kwargs`, iterators); save for after Phase 1.
 - 🟢 **"Pro Git" by Scott Chacon & Ben Straub** — the definitive, freely available (progit.org) git book.

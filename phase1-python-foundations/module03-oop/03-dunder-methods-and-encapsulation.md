@@ -6,7 +6,8 @@
 - [ ] Implement `__str__` and `__repr__` to control how objects print
 - [ ] Implement `__eq__` to control how objects compare with `==`
 - [ ] Explain Python's encapsulation conventions (`_protected`, `__private`)
-- [ ] Use the `@property` decorator for controlled attribute access
+- [ ] Write classic `get_x()`/`set_x()` getter and setter methods
+- [ ] Use the `@property` decorator for controlled attribute access, and know when to reach for it instead of a plain method
 
 ---
 
@@ -131,11 +132,49 @@ print(account._BankAccount__pin)  # 1234 -- still technically reachable, just aw
 
 ✅ **Best Practice:** Use a single leading underscore (`_balance`) for attributes meant to be internal — this is by far the most common convention in real Python code. Reserve double underscores for the rare case where you specifically want to avoid subclass naming collisions.
 
+## Getters and Setters: The Classic Pattern
+
+Once you have an internal attribute like `_balance`, the traditional OOP way to control access to it — the same technique used in Java, C++, C#, and taught this way in classic CS texts like *Introduction to Computation and Programming Using Python* (MIT's intro course book, which builds its whole `Person` class example around `get_name()`, `set_birthday()`, and `get_age()` methods) — is a pair of plain methods:
+
+```python
+class BankAccount:
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self._balance = balance
+
+    def get_balance(self):
+        """Classic getter -- just hands back the internal value."""
+        return self._balance
+
+    def set_balance(self, new_balance):
+        """Classic setter -- validates before updating."""
+        if new_balance < 0:
+            raise ValueError("Balance cannot be negative.")
+        self._balance = new_balance
+
+account = BankAccount("Ada", 100)
+print(account.get_balance())     # 100
+
+account.set_balance(200)              # runs validation, then updates _balance
+print(account.get_balance())        # 200
+
+account.set_balance(-50)                # raises: ValueError: Balance cannot be negative.
+```
+
+**How it works:** exactly like any other method — `get_balance()` reads `self._balance`, `set_balance()` validates and writes it. Nothing Python-specific here; this is standard, fully valid, widely-used object-oriented code in any language, Python included.
+
+✅ **Best Practice:** There's nothing wrong with this style — plenty of real Python code (and most non-Python OOP code you'll read) uses it. Python just also offers a second option, `@property`, that gives you the same validation with attribute-style syntax at the call site (`account.balance` instead of `account.get_balance()`). Reach for it when you're writing new code and want that syntax; keep using plain getter/setter methods when that's the existing pattern in a codebase, or when you're more comfortable with the explicit method call.
+
 ## `@property`: Controlled Access to Attributes
 
 A **property** lets you expose a method that behaves like a plain attribute — useful for adding validation or computed values without changing how callers use your class.
 
-💡 **Tip — coming from Java/C#/C++?** `@property` *is* Python's version of getters and setters. Other languages write explicit `get_balance()` / `set_balance()` methods because there's no other way to intercept attribute access. Python instead lets you start with a plain public attribute (`self.balance`), and only *later* — without breaking any code that already calls `account.balance`— swap it for a `@property` + `@balance.setter` pair once you need validation. That's why idiomatic Python code rarely has hand-written `get_x()`/`set_x()` methods: `@property` gives the same control while keeping the attribute-style syntax callers already expect.
+💡 **Tip — coming from Java/C#/C++?** `@property` is Python's *optional upgrade* on top of the classic getter/setter pattern you just saw. It solves one specific annoyance: if a class starts out with a plain public attribute (`self.balance`) and later needs validation, switching to `get_balance()`/`set_balance()` breaks every caller that wrote `account.balance`. `@property` lets you make that switch without changing any calling code — `account.balance` keeps working, it just quietly runs your method underneath.
+
+| Style | Call site | When to use |
+|---|---|---|
+| `get_x()` / `set_x()` | `account.get_balance()` | Matches other OOP languages; fine for any class, especially if that's the convention already in use |
+| `@property` + `@x.setter` | `account.balance` | Idiomatic default for *new* Python code; lets you add validation later without breaking existing `obj.attr` call sites |
 
 ```python
 class BankAccount:
@@ -220,7 +259,8 @@ temp.celsius = -300            # raises: ValueError: Temperature cannot be below
 | Expecting `_name` to be truly private | It's convention only — use it to signal intent, not to enforce security |
 | Only defining `__str__`, never `__repr__` | Define `__repr__` at minimum — it's the fallback for printing, debugging, and container display |
 | Relying on default `==` (identity) when you meant value equality | Define `__eq__` whenever "equal" should mean "same data," not "same object" |
-| Directly mutating an attribute that should be validated | Use `@property` + setter to centralize validation logic |
+| Directly mutating an attribute that should be validated | Use a setter method (`set_x()`) or `@property` + setter to centralize validation logic |
+| Assuming `@property` is "correct Python" and `get_x()`/`set_x()` is "wrong" | Both are valid; classic getter/setter methods are still common and completely fine, `@property` is just the more idiomatic *default* for brand-new code |
 | Overusing double-underscore "private" attributes | Reserve for genuine name-collision concerns; single underscore covers 95% of real cases |
 
 ---
@@ -229,7 +269,8 @@ temp.celsius = -300            # raises: ValueError: Temperature cannot be below
 - [ ] Can implement `__str__` and `__repr__` and explain the difference
 - [ ] Can implement `__eq__` for value-based comparison
 - [ ] Understand `_protected` vs `__private` naming conventions and that neither is truly enforced
-- [ ] Can use `@property` and a matching setter for validated attribute access
+- [ ] Can write classic `get_x()`/`set_x()` getter and setter methods
+- [ ] Can use `@property` and a matching setter for validated attribute access, and explain when each style is the better fit
 - [ ] Completed the `temperature.py` exercise
 - [ ] Reviewed [`module03-cheatsheet.md`](module03-cheatsheet.md)
 - [ ] Reviewed [`module03-interview.md`](module03-interview.md)

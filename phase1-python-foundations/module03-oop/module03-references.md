@@ -25,6 +25,7 @@
 - 🟡 **[LeetCode — Design/OOP problems](https://leetcode.com/tag/design/)** — practice modeling small systems with classes once the basics feel solid.
 
 ## 📚 Books
+- 🟢 **"Introduction to Computation and Programming Using Python" by John V. Guttag** — MIT's intro CS textbook (companion to the 6.0001/6.0002 courses); its OOP chapter builds a `Person` class around classic explicit `get_name()`/`set_birthday()`/`get_age()` getter and setter methods before touching anything Python-specific — a great scaffold for seeing the "any OOP language" version of the pattern this module's `@property` section builds on.
 - 🟢 **"Python Crash Course" by Eric Matthes** — its Classes chapter matches this module's beginner-friendly pacing closely.
 - 🟡 **"Fluent Python" by Luciano Ramalho** — has an outstanding, much deeper treatment of dunder methods and the Python data model; ideal follow-up reading once Phase 1 is complete.
 - 🟡 **"Design Patterns: Elements of Reusable Object-Oriented Software" (Gang of Four)** — the classic reference on OOP design patterns; a longer-term read for after you're comfortable with these fundamentals.

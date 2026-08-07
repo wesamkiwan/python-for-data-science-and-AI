@@ -71,6 +71,9 @@ print(sq.area())   # 16
 **Q: Why might you use `@property` instead of just letting callers set `self.balance` directly?**
 > A: A plain attribute has no way to validate what gets assigned to it — `account.balance = -500` would silently succeed even though a negative balance shouldn't be allowed. `@property` with a paired setter lets me run validation logic (raise a `ValueError` for bad values) while callers still use the same simple `account.balance = 200` syntax, with no change to the class's public interface.
 
+**Q: Is it "wrong" to write explicit `get_balance()`/`set_balance()` methods in Python instead of using `@property`?**
+> A: No — it's completely valid Python, and it's the standard pattern in most other OOP languages (Java, C++, C#) and in classic CS texts. `@property` isn't a requirement; it's an optional, more idiomatic way to get the same validation while keeping attribute-style syntax (`account.balance` instead of `account.get_balance()`). I'd default to `@property` in new Python code, but I wouldn't call a codebase using `get_x()`/`set_x()` incorrect.
+
 ## "Gotcha" Questions
 
 **Q: What's the bug here, and what does it print?**

@@ -92,8 +92,28 @@ class Point:
 | `self._name` | "Protected" — internal use only | Convention only |
 | `self.__name` | "Private" — name-mangled to `_ClassName__name` | Mostly, still reachable |
 
-## `@property`: Validated Attribute Access
+## Getters & Setters: Classic vs. `@property`
+
+| Style | Call site | Notes |
+|---|---|---|
+| `get_x()` / `set_x()` | `account.get_balance()` | Plain methods — valid in any Python codebase, matches other OOP languages |
+| `@property` + `@x.setter` | `account.balance` | Same validation, attribute-style syntax; idiomatic default for new code |
+
 ```python
+# Classic getter/setter
+class BankAccount:
+    def __init__(self, balance):
+        self._balance = balance
+
+    def get_balance(self):
+        return self._balance
+
+    def set_balance(self, value):
+        if value < 0:
+            raise ValueError("Balance cannot be negative.")
+        self._balance = value
+
+# @property equivalent
 class BankAccount:
     def __init__(self, balance):
         self._balance = balance
