@@ -135,6 +135,8 @@ print(account._BankAccount__pin)  # 1234 -- still technically reachable, just aw
 
 A **property** lets you expose a method that behaves like a plain attribute — useful for adding validation or computed values without changing how callers use your class.
 
+💡 **Tip — coming from Java/C#/C++?** `@property` *is* Python's version of getters and setters. Other languages write explicit `get_balance()` / `set_balance()` methods because there's no other way to intercept attribute access. Python instead lets you start with a plain public attribute (`self.balance`), and only *later* — without breaking any code that already calls `account.balance`— swap it for a `@property` + `@balance.setter` pair once you need validation. That's why idiomatic Python code rarely has hand-written `get_x()`/`set_x()` methods: `@property` gives the same control while keeping the attribute-style syntax callers already expect.
+
 ```python
 class BankAccount:
     def __init__(self, owner, balance):
